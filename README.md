@@ -40,20 +40,32 @@ I have demonstrated three distinct behaviors:
   git clone [https://github.com/TalaChehade04/Autonomous_Robot.git](https://github.com/TalaChehade04/Autonomous_Robot.git)
   cd Autonomous_Robot
   ```
+2.  **Launch the simulation and navigation:**
+   ```bash
+    #Terminal 1: Launch the Simulation
 
-2.  **Export the model:**
-    ```bash
     export TURTLEBOT3_MODEL=waffle
-    ```
-3.  **Launch the simulation and navigation:**
-    *(Note: Instructions on using the included launch script will be added here once the workspace is finalized.)*
 
+    ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+
+    #Terminal 2: Launch Navigation
+   
+    export TURTLEBOT3_MODEL=waffle
+
+    #Replace 'my_map.yaml' with your actual filename if different
+
+    ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$(pwd)/maps/my_map.yaml
+```
+    
 ## 6. Metrices & Results
 * **Success Rate:** 100% (3/3 trials)
-* **Avg Time to Goal:** 26 Seconds
+* **Avg Time to Goal:** 12 Seconds
 * **Collisions:** 0
 
 ## 7. Assumptions & Future Improvements
 * **Assumptions:** It is assumed the robot starts at the `[0,0]` coordinate or is manually localized using the "2D Pose Estimate" tool in RViz.
 * **Known Limitations:** In very tight spaces, the local planner may struggle with oscillations.
 * **Future Improvements:** I would implement a **Recovery Behavior** script to help the robot back up if it gets stuck in a corner.
+
+## 8. Video Demo Link
+https://drive.google.com/file/d/1z1DA2aPxBvgd-hG-pKHpKHRmqurIPFiw/view?usp=sharing
