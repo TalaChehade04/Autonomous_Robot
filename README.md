@@ -65,7 +65,7 @@ Autonomous_Robot/
 
 1.  **Clone this repository** into your home directory or ROS2 workspace.
 ```bash
-bash git clonegit clone https://github.com/TalaChehade04/Autonomous_Robot.git
+git clone https://github.com/TalaChehade04/Autonomous_Robot.git
 cd Autonomous_Robot
   ```
 
