@@ -11,7 +11,7 @@ The goal of this project is to demonstrate autonomous navigation and obstacle av
 ## 2. Environment & Requirements
 To run this project, you need a system with:
 * **OS:** Ubuntu 22.04
-* **ROS2 Distro:** Kilted
+* **ROS2 Distro:** Kilted (Note: This is the distribution used for development/testing; commands are compatible with ROS 2 Humble).
 * **Simulator:** Gazebo
 * **Required Packages:** * `turtlebot3_gazebo`
     * `turtlebot3_navigation2`
