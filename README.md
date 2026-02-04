@@ -76,6 +76,8 @@ cd Autonomous_Robot
     ```
 
 3.  **Launch the simulation and navigation:**
+   This launch file starts Gazebo, Nav2, RViz, loads the pre-built map, and enables goal-based navigation.
+
    ```bash
     ros2 launch lebotics_navigation navigation_launch.py
    ```
@@ -118,7 +120,7 @@ cd Autonomous_Robot
 ## 10. Video Demo Link
 https://drive.google.com/file/d/1z1DA2aPxBvgd-hG-pKHpKHRmqurIPFiw/view?usp=sharing
 
-## 10. References & Open-Source Packages
+## 11. References & Open-Source Packages
 This project was developed using open-source tools and official ROS2 documentation. All core algorithms and frameworks were reused as intended, while configuration, testing, and scenario design were manually implemented.
 
 **ROS2 & Core Tools**
