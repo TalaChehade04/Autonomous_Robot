@@ -79,18 +79,29 @@ cd Autonomous_Robot
    ```bash
     ros2 launch lebotics_navigation navigation_launch.py
    ```
-    
-## 6. Metrices & Results
+## 6. How to Use the Simulation
+1.  **Localize the Robot:**
+    * In RViz, click the **"2D Pose Estimate"** button.
+    * Click and drag at the robot's starting position (usually center of the map) until the small green arrows (particles) align with the robot's orientation in Gazebo.
+2.  **Set a Destination:**
+    * Click the **"Nav2 Goal"** button.
+    * Click and drag anywhere on the map.
+    * The robot will plan a path (Global Path) and begin moving.
+3.  **Test Obstacle Avoidance:**
+    * While the robot is moving, you can manually insert an object in Gazebo. 
+    * Observe the **Local Costmap** (colored area around the robot) update and the robot steer away.
+      
+## 7. Metrices & Results
 * **Success Rate:** 100% (3/3 trials)
 * **Avg Time to Goal:** ~12 seconds (measured using RViz navigation feedback timestamps)
 * **Collisions:** 0
 
-## 7. Assumptions & Future Improvements
+## 8. Assumptions & Future Improvements
 * **Assumptions:** It is assumed the robot starts at the `[0,0]` coordinate or is manually localized using the "2D Pose Estimate" tool in RViz.
 * **Known Limitations:** In very tight spaces, the local planner may struggle with oscillations.
 * **Future Improvements:** I would implement a **Recovery Behavior** script to help the robot back up if it gets stuck in a corner.
   
-## 8. Reuse vs Custom Work
+## 9. Reuse vs Custom Work
 
 ### Reused Components
 - TurtleBot3 Waffle model
@@ -104,7 +115,7 @@ cd Autonomous_Robot
 - Verified dynamic obstacle handling and replanning
 - Structured launch and run workflow for reproducibility
 
-## 9. Video Demo Link
+## 10. Video Demo Link
 https://drive.google.com/file/d/1z1DA2aPxBvgd-hG-pKHpKHRmqurIPFiw/view?usp=sharing
 
 ## 10. References & Open-Source Packages
