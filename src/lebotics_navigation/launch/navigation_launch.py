@@ -7,7 +7,6 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     # 1. Paths to your files
-    # Make sure this matches the project name in your CMakeLists.txt
     pkg_dir = get_package_share_directory('lebotics_navigation')
     map_file = os.path.join(pkg_dir, 'maps', 'my_map.yaml')
     
@@ -31,3 +30,4 @@ def generate_launch_description():
         gazebo_launch,
         nav2_launch
     ])
+
