@@ -39,13 +39,29 @@ I have demonstrated three distinct behaviors:
 
 Autonomous_Robot/
 
-├── maps/
+├── src/
 
-│   ├── my_map.yaml
+│   └── lebotics_navigation/
 
-│   └── my_map.pgm
+│       ├── CMakeLists.txt
 
-├── README.md
+│       ├── package.xml
+
+│       ├── launch/
+
+│       │   └── navigation_launch.py
+
+│       ├── maps/
+
+│       │   ├── my_map.yaml
+
+│       │   └── my_map.pgm
+
+│       └── rviz/
+
+│           └── nav_config.rviz
+
+└── README.md
 
 1.  **Clone this repository** into your home directory or ROS2 workspace.
   ```bash
