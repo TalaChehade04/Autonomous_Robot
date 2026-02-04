@@ -63,28 +63,16 @@ Autonomous_Robot/
 
 └── README.md
 
-1.  **Clone this repository** into your home directory or ROS2 workspace.
-  ```bash
-  git clone https://github.com/TalaChehade04/Autonomous_Robot.git
-  cd Autonomous_Robot
-  ```
+1. **Build the workspace:**
+   ```bash
+   colcon build --symlink-install
+   source install/setup.bash
+    ```
+
 2.  **Launch the simulation and navigation:**
    ```bash
-    #Terminal 1: Launch the Simulation
-
-    export TURTLEBOT3_MODEL=waffle
-
-    ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+    ros2 launch lebotics_navigation navigation_launch.py
    ```
-   ```bash
-    #Terminal 2: Launch Navigation
-   
-    export TURTLEBOT3_MODEL=waffle
-
-    #Replace 'my_map.yaml' with your actual filename if different
-
-    ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$(pwd)/maps/my_map.yaml
-```
     
 ## 6. Metrices & Results
 * **Success Rate:** 100% (3/3 trials)
