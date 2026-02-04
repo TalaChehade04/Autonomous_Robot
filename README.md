@@ -63,13 +63,17 @@ Autonomous_Robot/
 
 └── README.md
 
-1. **Build the workspace:**
+1.  **Clone this repository** into your home directory or ROS2 workspace.
+bash git clonegit clone https://github.com/TalaChehade04/Autonomous_Robot.git
+cd Autonomous_Robot
+
+2. **Build the workspace:**
    ```bash
    colcon build --symlink-install
    source install/setup.bash
     ```
 
-2.  **Launch the simulation and navigation:**
+3.  **Launch the simulation and navigation:**
    ```bash
     ros2 launch lebotics_navigation navigation_launch.py
    ```
