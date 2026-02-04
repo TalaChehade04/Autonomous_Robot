@@ -49,7 +49,7 @@ Autonomous_Robot/
 
 1.  **Clone this repository** into your home directory or ROS2 workspace.
   ```bash
-  git clone [https://github.com/TalaChehade04/Autonomous_Robot.git](https://github.com/TalaChehade04/Autonomous_Robot.git)
+  git clone https://github.com/TalaChehade04/Autonomous_Robot.git
   cd Autonomous_Robot
   ```
 2.  **Launch the simulation and navigation:**
