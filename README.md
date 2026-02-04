@@ -23,7 +23,7 @@ To run this project, you need a system with:
 
 
 ## 3. Implementation Approach
-I chose **Option A: Use Nav2 to send a goal and navigate in simulation**. 
+I chose to use **Nav2 to send a goal and navigate in simulation**. 
 * **Global Planner:** Used to find the optimal path from Start to Goal.
 * **Local Planner (DWA):** Used to detect obstacles via LiDAR and steer the robot in real-time.
 * **Map:** A static map was generated using SLAM and is provided in the `maps/` directory.
@@ -76,6 +76,7 @@ cd Autonomous_Robot
     ```
 
 3.  **Launch the simulation and navigation:**
+   
    This launch file starts Gazebo, Nav2, RViz, loads the pre-built map, and enables goal-based navigation.
 
    ```bash
